@@ -37,6 +37,7 @@ namespace OneArmedBandit
             // get random values for each reel (store each in separate int variable)
 
             int i = 1;
+            int delay = 10;
 
             while (i < 25)
             {
@@ -90,7 +91,8 @@ namespace OneArmedBandit
                 reel1.Refresh();
                 reel2.Refresh();
                 reel3.Refresh();
-                Thread.Sleep(90);
+                Thread.Sleep(delay);
+                delay = delay + 15;
                 i++;
             }
 
